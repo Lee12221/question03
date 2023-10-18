@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강원천문대</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <!-- #wrap>#header+#slide+#contents+#footer -->
+    <div id="wrap">
+        <div id="header">
+            <!-- .logo+nav -->
+            <div class="logo">
+                <!-- a>img -->
+                <a href="#"><img src="img/logo.png" alt="로고"></a>
+            </div>
+            <nav>
+                <!-- ul.gnb>li*4>a[href="#"]{버튼$}+ul.sub>li*4>a[href="#"]{s버튼$} -->
+                <ul class="gnb">
+                    <li>
+                        <a href="#">버튼1</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼2</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼3</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼4</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="slide">
+            <!-- ul>li*3>a[href="#"]>img[src="slide$.jpg" alt="슬라이드$"] -->
+            <ul>
+                <li><a href="#"><img src="img/slide1.jpg" alt="슬라이드1"></a></li>
+                <li><a href="#"><img src="img/slide2.jpg" alt="슬라이드2"></a></li>
+                <li><a href="#"><img src="img/slide3.jpg" alt="슬라이드3"></a></li>
+            </ul>
+        </div>
+        <div id="contents">
+            <!-- section*3 -->
+            <section>
+                <!-- ul.tab>li*2>a[href="#"] -->
+                <ul class="tab">
+                    <li><a href="#" class="tab1">공지사항</a></li>
+                    <li><a href="#" class="tab2">갤러리</a></li>
+                </ul>
+                <!-- ul.notice>li*5>a[href="#"]>div.num+div.subject -->
+                <ul class="notice">
+                    <li>
+                        <a href="#">
+                            <div class="num">1 </div>
+                            <div class="subject"><span>[중요]</span>강원 천문대 장기휴관 안내</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="num">2 </div>
+                            <div class="subject">예매취소시 취소금액 관련한 안내사항</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="num">3 </div>
+                            <div class="subject">스마트폰 예매시 주의사항</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="num">4 </div>
+                            <div class="subject">스마트폰 예매 가능 안내</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="num">5 </div>
+                            <div class="subject">온라인 예매 시 안내사항</div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- ul.gallery>li*3>img[src="gallery$.jpg" alt="갤러리$"] -->
+                <ul class="gallery">
+                    <li><img src="img/gallery1.jpg" alt="갤러리1"></li>
+                    <li><img src="img/gallery2.jpg" alt="갤러리2"></li>
+                    <li><img src="img/gallery3.jpg" alt="갤러리3"></li>
+                </ul>
+            </section>
+            <section>
+                <div class="title">배너</div>
+                <!-- ul.banner>li*2>a[href="#"] -->
+                <ul class="banner">
+                    <li><a href="#">
+                        <img src="img/banner.jpg" alt="배너">
+                    </a></li>
+                    <li><a href="#">
+                        강원천문대 발전기금<br><br>
+                        후원안내
+                    </a></li>
+                </ul>
+            </section>
+            <section>
+                <div class="title">바로가기</div>
+                <ul class="banner">
+                    <li><a href="#">
+                        <img src="img/link.jpg" alt="배너">
+                    </a></li>
+                    <li><a href="#">
+                        예약하기
+                    </a></li>
+                </ul>
+            </section>
+        </div>
+        <div id="footer">
+            <!-- .f_logo+.f_right>.f_menu+.copy -->
+            <div class="f_logo logo">
+                <a href="#"><img src="img/logo.png" alt="로고"></a>
+            </div>
+            <div class="f_right">
+                <div class="f_menu">
+                    <a href="#">개인정보처리방침</a> | 
+                    <a href="#">저작권보호정책</a> | 
+                    <a href="#">이메일무단수집거부</a> | 
+                    <a href="#">CCTV 설치 및 운영지침</a>
+                </div>
+                <div class="copy">
+                    강원천문대 | 주소 : 강원도 영월군 영월읍 천문대길 397 | TEL.033-372-8445 | FAX.033-372-8444 <br>
+                    천문대 관람시간 안내 : 하절기(4월~9월) 15:00~23:00 (매표는 21시 50분까지), 동절기(10월~3월) 14:00~22:00 (매표는 20시 50분까지)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

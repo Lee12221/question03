@@ -1,0 +1,123 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    display: block;
+    color: #333;
+    transition:.3s;
+}
+img{display: block;}
+
+#wrap{width: 1200px;margin: 0 auto;}
+#header{height: 100px;display: flex; }
+#slide{height: 300px;}
+#contents{height: 200px;}
+#footer{height: 100px;background: #ccc;}
+
+.logo img{width: 200px;}
+.logo{padding-top: 25px;}
+nav{width: 1000px;}
+
+.sub{
+    display: none; 
+    background: rgba(255,255,255,.8);
+    height: 150px;
+    position: absolute;
+    z-index: 10;
+}
+/* .gnb li:hover .sub{display: block;} */
+
+.gnb a{
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+}
+.sub a{line-height: 32px;}
+
+.gnb{
+    display: flex;
+    width: 600px;
+    position: relative;
+    left: 380px;top: 30px;
+    outline: 1px #777 solid;
+}
+.gnb li:hover > a{
+    background: #333;
+    color: #fff;
+}
+
+#slide{overflow: hidden;}
+#slide ul{animation: fade 9s infinite;}
+@keyframes fade{
+    0%{margin-top: 0;opacity: 0;}
+    3%{margin-top: 0;opacity: 1;}
+    30%{margin-top: 0;opacity: 1;}
+    33%{margin-top: 0;opacity: 0;}
+
+    33.1%{margin-top: -300px;opacity: 0;}
+    36%{margin-top: -300px;opacity: 1;}
+    63%{margin-top: -300px;opacity: 1;}
+    66%{margin-top: -300px;opacity: 0;}
+
+    66.1%{margin-top: -600px;opacity: 0;}
+    69%{margin-top: -600px;opacity: 1;}
+    97%{margin-top: -600px;opacity: 1;}
+    100%{margin-top: -600px;opacity: 0;}
+}
+
+#contents{display: flex;}
+#contents section{
+    padding: 10px;width: 380px;
+}
+
+.tab{display: flex;}
+.tab li{width: 50%;}
+.tab a{
+    line-height: 30px;
+    text-align: center;
+    outline: 1px #777 solid;
+}
+.tab a:hover{background: #eee;}
+
+.notice a{
+    line-height: 30px;
+    display: flex;
+    padding: 0 10px;
+}
+.num{width: 20px;}
+.subject span{font-weight: bold;}
+.notice a:hover{background: #eee;}
+
+.gallery img{width: 120px;}
+.gallery{
+    height: 150px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery li:hover{opacity: .8;}
+
+.title{
+    line-height: 30px;text-align: center;
+    outline: 1px #777 solid;
+}
+.banner img{width: 120px;}
+.banner{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner a:hover img{opacity: .8;}
+.banner a:hover{text-decoration: underline;}
+
+#footer{display: flex;}
+.f_logo{filter:grayscale(1);}
+.f_menu a{display: inline-block;}
+.f_menu{line-height: 40px;}
+.f_right{
+    padding-left: 20px;
+    color: #333;
+}
+.f_menu a:hover{text-decoration: underline;}
